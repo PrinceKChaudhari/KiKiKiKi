@@ -5,7 +5,6 @@ import {
 } from "@/components/retroui";
 import {
   ArrowRight,
-  CopyIcon,
 } from "lucide-react";
 import Image from "next/image";
 import { componentConfig } from "@/config/components";
@@ -64,7 +63,7 @@ export default function ReactHomepage() {
 
 
       {/* Features Section */}
-      <section className="container mx-auto px-4 py-28 space-y-14">
+      <section className="container mx-auto px-4 pt-16 pb-12 lg:pt-20 lg:pb-16 space-y-10">
         <div className="text-center space-y-6">
           <Text as="h2" className="uppercase text-4xl lg:text-5xl">
             <span className="relative text-outline-foreground text-shadow-foreground">
@@ -91,13 +90,13 @@ export default function ReactHomepage() {
 
                   <div className="flex flex-col justify-between p-6">
                     <div>
-                      <Text as="h3" className="mb-4">Copy-paste or just use your CLI</Text>
+                      <Text as="h3" className="mb-4">Explore it. Make it yours.</Text>
                       <p className="text-sm text-muted-foreground mb-6">
-                        Discover our bold neo-brutalist sections. With striking hero blocks, pricing tables, and feature grids, your product will stand out in the market.
+                        Preview a component, inspect its source, and see how the pieces fit together. The button guide is a good place to start.
                       </p>
                     </div>
 
-                    {/* Terminal Preview */}
+                    {/* Resource link */}
                     <div className="relative">
                       <div className="absolute -bottom-1.5 -right-1.5 left-1.5 top-1.5 border-2 border-border bg-primary" />
                       <div className="relative bg-background border-2 border-border p-3">
@@ -106,10 +105,10 @@ export default function ReactHomepage() {
                           <div className="w-2.5 h-2.5 rounded-full bg-[#FFD93D] border"></div>
                           <div className="w-2.5 h-2.5 rounded-full bg-[#4ECDC4] border"></div>
                           <div className="ml-auto">
-                            <CopyIcon className="w-4 h-4" />
+                            <ArrowRight aria-hidden="true" className="w-4 h-4" />
                           </div>
                         </div>
-                        <code className="text-sm font-mono">Explore /docs/components/button</code>
+                        <Link href="/docs/components/button" className="block text-sm font-mono underline underline-offset-4 hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-4">Explore the button guide <ArrowRight aria-hidden="true" className="inline size-4" /></Link>
                       </div>
                     </div>
                   </div>
@@ -153,7 +152,7 @@ export default function ReactHomepage() {
               </Card>
             </div>
 
-            {/* MCP Server Card */}
+            {/* Theme Card */}
             <div className="relative lg:col-span-3">
               <div className="absolute -bottom-2 -right-2 left-2 top-2 border-2 border-black bg-[#FFD93D]" />
               <Card className="relative shadow-none h-full">
@@ -166,11 +165,11 @@ export default function ReactHomepage() {
                     <div>
                       <Text as="h3" className="mb-4">Make the theme yours</Text>
                       <p className="text-sm text-muted-foreground mb-6">
-                        Discover our bold neo-brutalist sections. With striking hero blocks, pricing tables, and feature grids, your product will stand out in the market.
+                        Try a new palette and preview it across cards, charts, and buttons. Find the colors that feel like you.
                       </p>
                     </div>
 
-                    {/* Terminal Preview */}
+                    {/* Resource link */}
                     <div className="relative">
                       <div className="absolute -bottom-1.5 -right-1.5 left-1.5 top-1.5 border-2 border-border bg-primary" />
                       <div className="relative bg-background border-2 border-border p-3">
@@ -179,10 +178,10 @@ export default function ReactHomepage() {
                           <div className="w-2.5 h-2.5 rounded-full bg-[#FFD93D] border"></div>
                           <div className="w-2.5 h-2.5 rounded-full bg-[#4ECDC4] border"></div>
                           <div className="ml-auto">
-                            <CopyIcon className="w-4 h-4" />
+                            <ArrowRight aria-hidden="true" className="w-4 h-4" />
                           </div>
                         </div>
-                        <code className="text-sm font-mono">Explore colors at /themes</code>
+                        <Link href="/themes" className="block text-sm font-mono underline underline-offset-4 hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-4">Find your colors <ArrowRight aria-hidden="true" className="inline size-4" /></Link>
                       </div>
                     </div>
                   </div>
@@ -194,7 +193,7 @@ export default function ReactHomepage() {
       </section>
 
       {/* UI Components Section */}
-      <section className="container mx-auto px-4 py-28 space-y-14">
+      <section className="container mx-auto px-4 pt-12 pb-16 lg:pt-16 lg:pb-20 space-y-10">
         <div className="text-center space-y-6">
           <Text as="h2" className="uppercase text-4xl lg:text-5xl">
             Neo Brutalist UI
