@@ -1,0 +1,4 @@
+import Link from "next/link";
+export default function PrivacyPage() {
+  return <main className="container mx-auto max-w-3xl px-4 py-20"><h1 className="font-head text-4xl">KIKIKIKI privacy</h1><p className="mt-6">KIKIKIKI is maintained by Prince K Chaudhari. Public documentation and component browsing do not require an account.</p><p className="mt-4">The site includes Vercel Analytics and Speed Insights integrations. Hosting and external services may process request data. Account and download features depend on a separately configured backend.</p><p className="mt-4">For questions about this deployment, contact the repository owner. Do not post personal or sensitive information in public issues.</p><Link className="mt-6 inline-block underline" href="https://github.com/PrinceKChaudhari/KiKiKiKi/issues">Repository contact</Link></main>;
+}
