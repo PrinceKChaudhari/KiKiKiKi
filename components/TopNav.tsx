@@ -2,7 +2,8 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { Github, Menu, X } from "lucide-react";
+import Image from "next/image";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/retroui/Button";
 import {
   NavigationMenu,
@@ -159,11 +160,11 @@ export default function TopNav() {
                     );
                   })}
                 </nav>
-                <Drawer.Footer><a href="https://github.com/PrinceKChaudhari/KiKiKiKi" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 border-2 bg-card px-3 py-2 text-sm font-bold hover:bg-primary focus-visible:outline-2 focus-visible:outline-offset-4"><Github aria-hidden="true" className="size-4" /> GitHub<span className="sr-only"> (opens in a new tab)</span></a><Button render={<Link href="/docs/components">Browse Components</Link>} /></Drawer.Footer>
+                <Drawer.Footer><a href="https://github.com/PrinceKChaudhari/KiKiKiKi" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 border-2 bg-card px-3 py-2 text-sm font-bold hover:bg-primary focus-visible:outline-2 focus-visible:outline-offset-4"><Image src="/images/github-mark.png" alt="" width={24} height={24} className="size-6 mix-blend-multiply dark:invert dark:mix-blend-screen" /> GitHub<span className="sr-only"> (opens in a new tab)</span></a><Button render={<Link href="/docs/components">Browse Components</Link>} /></Drawer.Footer>
               </Drawer.Content>
             </Drawer>
 
-            <div className="hidden md:flex items-center gap-3"><a href="https://github.com/PrinceKChaudhari/KiKiKiKi" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 border-2 bg-card px-3 py-2 text-sm font-bold hover:bg-primary focus-visible:outline-2 focus-visible:outline-offset-4"><Github aria-hidden="true" className="size-4" /> GitHub<span className="sr-only"> (opens in a new tab)</span></a><Button size="sm" render={<Link href="/docs/components">Browse Components</Link>} /></div>
+            <div className="hidden md:flex items-center gap-3"><a href="https://github.com/PrinceKChaudhari/KiKiKiKi" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 border-2 bg-card px-3 py-2 text-sm font-bold hover:bg-primary focus-visible:outline-2 focus-visible:outline-offset-4"><Image src="/images/github-mark.png" alt="" width={24} height={24} className="size-6 mix-blend-multiply dark:invert dark:mix-blend-screen" /> GitHub<span className="sr-only"> (opens in a new tab)</span></a><Button size="sm" render={<Link href="/docs/components">Browse Components</Link>} /></div>
           </div>
         </div>
       </div>
