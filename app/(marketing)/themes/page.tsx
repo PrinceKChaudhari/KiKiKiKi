@@ -7,7 +7,6 @@ import {
 } from "@/components/retroui";
 import ChartStyleMultiple from "@/preview/charts/area-chart-style-multiple";
 import CourseCard from "@/preview/blocks/course-card";
-import SignInBlock from "@/preview/blocks/sign-in";
 import BarChartStyleMultiple from "@/preview/charts/bar-chart-style-multiple";
 import TeamMembersBlock from "@/preview/blocks/team-members";
 import CopyTheme from "@/components/CopyTheme";
@@ -131,13 +130,6 @@ export default function Themes() {
                             </Card.Content>
                         </Card>
                     </div>
-
-
-                    <Card className="w-full border-muted bg-background shadow-none">
-                        <Card.Content>
-                            <SignInBlock />
-                        </Card.Content>
-                    </Card>
                 </div>
             </section>
     );

@@ -5,8 +5,6 @@ import { Toaster } from "@/components/retroui";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { ThemeProvider } from "@/contexts/ThemeContext";
-import { AuthProvider } from "@/contexts/AuthContext";
-import { getCurrentUser } from "@/lib/auth";
 import { cn } from "@/lib/utils";
 
 
@@ -36,12 +34,11 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const user = await getCurrentUser();
 
   return (
     <html lang="en" className={cn("font-sans", space.variable)}>
@@ -69,9 +66,7 @@ export default async function RootLayout({
         className={`${head.variable} ${space.variable} ${mono.variable} bg-background text-foreground`}
       >
         <ThemeProvider>
-          <AuthProvider initialUser={user}>
-            {children}
-          </AuthProvider>
+          {children}
           <Toaster />
         </ThemeProvider>
         <SpeedInsights />

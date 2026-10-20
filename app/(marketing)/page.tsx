@@ -109,7 +109,7 @@ export default function ReactHomepage() {
                             <CopyIcon className="w-4 h-4" />
                           </div>
                         </div>
-                        <code className="text-sm font-mono">npx shadcn add @retroui/button</code>
+                        <code className="text-sm font-mono">Explore /docs/components/button</code>
                       </div>
                     </div>
                   </div>
@@ -164,7 +164,7 @@ export default function ReactHomepage() {
 
                   <div className="flex flex-col justify-between p-6">
                     <div>
-                      <Text as="h3" className="mb-4">MCP server support with Shadcn</Text>
+                      <Text as="h3" className="mb-4">Make the theme yours</Text>
                       <p className="text-sm text-muted-foreground mb-6">
                         Discover our bold neo-brutalist sections. With striking hero blocks, pricing tables, and feature grids, your product will stand out in the market.
                       </p>
@@ -182,7 +182,7 @@ export default function ReactHomepage() {
                             <CopyIcon className="w-4 h-4" />
                           </div>
                         </div>
-                        <code className="text-sm font-mono">npx shadcn@latest mcp init</code>
+                        <code className="text-sm font-mono">Explore colors at /themes</code>
                       </div>
                     </div>
                   </div>

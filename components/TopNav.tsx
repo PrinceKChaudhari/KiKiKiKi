@@ -14,11 +14,8 @@ import {
 } from "@/components/ui/navigation-menu";
 import { Drawer } from "@/components/retroui/Drawer";
 import { navConfig } from "@/config/navigation";
-import { useAuth } from "@/contexts/AuthContext";
-import UserMenu from "@/components/UserMenu";
 
 export default function TopNav() {
-  const { user, mounted } = useAuth();
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -162,43 +159,11 @@ export default function TopNav() {
                     );
                   })}
                 </nav>
-                <Drawer.Footer>
-                  <div className="flex flex-col gap-2 w-full">
-                    {mounted && user ? (
-                      <div className="px-3 py-2">
-                        <UserMenu user={user} />
-                      </div>
-                    ) : (
-                      <>
-                        <Button
-                          variant="outline"
-                          size="sm"
-                          className="w-full"
-                          render={<Link href="/sign-in">Sign In</Link>}
-                        />
-                        <Button
-                          size="sm"
-                          className="w-full"
-                          render={<Link href="/pricing">Start Free</Link>}
-                        />
-                      </>
-                    )}
-                  </div>
-                </Drawer.Footer>
+                <Drawer.Footer><Button render={<Link href="/docs/components">Browse Components</Link>} /></Drawer.Footer>
               </Drawer.Content>
             </Drawer>
 
-            {/* Desktop Auth Buttons */}
-            <div className="hidden md:flex items-center space-x-3">
-              {mounted && user ? (
-                <UserMenu user={user} />
-              ) : (
-                <>
-                  <Button variant="outline" size="sm" className="bg-card" render={<Link href="/sign-in">Sign In</Link>} />
-                  <Button size="sm" render={<Link href="/pricing">Start Free</Link>} />
-                </>
-              )}
-            </div>
+            <div className="hidden md:flex"><Button size="sm" render={<Link href="/docs/components">Browse Components</Link>} /></div>
           </div>
         </div>
       </div>

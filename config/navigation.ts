@@ -33,25 +33,6 @@ export const navConfig: INavigationConfig = {
           title: "Changelog",
           href: "/docs/changelog",
         },
-        {
-          title: "MCP Server",
-          href: "/docs/mcp",
-        },
-        {
-          title: "Blocks",
-          href: "/blocks",
-          tag: "Pro",
-        },
-        {
-          title: "Templates",
-          href: "/templates",
-          tag: "Pro",
-        },
-        {
-          title: "Figma Kit",
-          href: "/figma",
-          tag: "Pro",
-        },
       ],
     },
     {

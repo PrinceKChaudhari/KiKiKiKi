@@ -26,9 +26,9 @@ Open http://localhost:3000. To check production output, run `pnpm build`, then `
 3. Keep the install command `pnpm install --frozen-lockfile` and build command `pnpm build` from vercel.json. Leave the Output Directory at its Next.js default.
 4. Optionally set `NEXT_PUBLIC_SITE_URL` to your deployed HTTPS URL for sitemap and robots metadata, then deploy.
 
-The public components, docs, themes, and free resources page do not require payment. Existing account, CMS, premium download, and email features depend on separate services; Vercel does not supply or unlock them. Configure your own services before enabling them. Private keys must never use a NEXT_PUBLIC prefix.
+The public components, docs, themes, and free resources page do not require payment or an account. Sign-in, registration, authentication actions, account dashboards, and disconnected premium screens have been removed. No authentication backend is required.
 
-Component registry identifiers remain unchanged for compatibility. The homepage focuses on included free resources; inherited blog articles, promotional footer links, advertising/referral scripts, funding configuration, and the old Docker deployment workflow have been removed.
+Internal component paths remain unchanged for compatibility. The docs use manual source examples rather than external registry installation commands. The homepage focuses on included free resources; inherited blog articles, promotional footer links, advertising/referral scripts, funding configuration, and the old Docker deployment workflow have been removed.
 
 ## License
 

@@ -34,7 +34,7 @@ export default function FreePage() {
         </div>
         <div className="mt-14 grid gap-8 border-t-2 pt-10 md:grid-cols-2">
           <div><h3 className="font-head text-xl">Do I need an account?</h3><p className="mt-3 text-muted-foreground">No account or payment is needed to browse the public components, documentation, and themes.</p></div>
-          <div><h3 className="font-head text-xl">What does this include?</h3><p className="mt-3 text-muted-foreground">The public resources included in this repository. Separately hosted premium downloads and services are not included in this free offering.</p></div>
+          <div><h3 className="font-head text-xl">What does this include?</h3><p className="mt-3 text-muted-foreground">The component previews, source examples, documentation, and themes included in this repository. No account or paid plan is needed.</p></div>
         </div>
       </section>
     </main>
